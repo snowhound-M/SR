@@ -5,4 +5,5 @@ services:
     buildCommand: |
       apt-get install -y git python3 python3-pip && \
       pip install -r requirements.txt
-    startCommand: python -m main
+    startCommand: |
+      flask run -h 0.0.0.0 -p 10000 & python -m main

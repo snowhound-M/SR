@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: SR
+    env: python3
+    buildCommand: |
+      apt-get install -y git python3 python3-pip && \
+      pip install -r requirements.txt
+    startCommand: |
+      flask run -h 0.0.0.0 -p 10000 & python3 -m main

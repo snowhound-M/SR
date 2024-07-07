@@ -1,8 +1,7 @@
 services:
   - type: web
-    name: my-web-service
+    name: Drone
     env: python
-    plan: free
     buildCommand: |
       apt-get install -y git python3 python3-pip && \
       pip install -r requirements.txt

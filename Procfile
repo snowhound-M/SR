@@ -1,1 +1,1 @@
-Drone: python3 -m main
+SR: python3 -m main

@@ -620,7 +620,6 @@ def video_metadata(file):
     data = {'width' : width, 'height' : height, 'duration' : duration }
     return data
 
-
-
 if __name__ == "__main__":
-    TDrone.run_until_disconnected()
+   PBot.send_message("TeamDrom", f"`~ starting` **@MusicEarAndHearBot**")
+   TDrone.run_until_disconnected()
